@@ -6,6 +6,9 @@ var cimg = document.querySelector("#video-cover");
 var vdo = document.querySelector("#hidden-video");
 
 
+
+
+
 function hoverCardfunc() {
     hoverCard.forEach(function(elem){
 
@@ -114,10 +117,32 @@ sections.forEach(function (elem) {
 })
 
 }
+function heightVdo() {
+var heightvdo = document.querySelectorAll("#height-vdo");
+var p =document.querySelectorAll("#p");
+var video;
+heightvdo.forEach(video => {
+    video.addEventListener("mouseenter",function () {
+        video.play();
+        gsap.to(video,{
+            height:"70vh",                
+        })
+    })
+
+    video.addEventListener("mouseleave",function () {
+        video.pause();
+        video.load();
+        gsap.to(video,{
+            height:"50vh",                
+        })
+    })
+});
+}
 
 
+heightVdo();
 page7vdo();
-pikaAi();
+// pikaAi();
 showReel();
 hoverCardfunc();
 fullScreenVideo();
