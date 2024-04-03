@@ -8,6 +8,7 @@
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="main">
@@ -30,12 +31,12 @@
                     Booklyn,NY
                 </h4>
                 <div class="btns flex items-center justify-around h-20 gap-4 relative mt-8">
-                    <div><i class="ri-close-fill bg-gray-900/50 text-[8vw] rounded-full text-white p-3"></i></div>
-                    <div><i class="ri-heart-fill bg-red-600 text-[10vw] rounded-full text-white p-4"></i></div>
-                    <div><i class="ri-chat-1-line bg-gray-900/50 text-[8vw] rounded-full text-white p-3"></i></div>
+                    <div class="hover:rotate-3 hover:scale-110"><i class="ri-close-fill bg-gray-900/50 text-[8vw] rounded-full text-white p-3 "></i></div>
+                    <div class="animate-bounce"><i id="heart" class=" ri-heart-fill scale-100 bg-red-600 text-[10vw] rounded-full text-white p-4 "></i></div>
+                    <div class="hover:scale-110"><i class="ri-chat-1-line bg-gray-900/50 text-[8vw] rounded-full text-white p-3"></i></div>
                 </div>
             </div>
-            <div class="final absolute bg-white rounded-[20px] w-full bottom-5 h-[10vh] w-full flex items-center justify-center">
+            <div class="final absolute bg-white rounded-[20px] w-full bottom-5 h-[10vh] w-full flex items-center justify-center hover:bg-red-600 hover:text-white ">
                 <h1 class="text-2xl font-bold ">View profile</h1>
             </div>
         </div>
