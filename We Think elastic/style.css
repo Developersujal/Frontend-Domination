@@ -92,3 +92,56 @@ nav{
     font-family: "Dancing Script", cursive;
     font-size: 8vw;
 }
+.page4{
+    height: 120vh;
+    width: 100%;
+    background-color: #151414;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.page4 video{
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+    cursor: pointer;
+}
+#moving-button{
+    position: relative;
+    height: 10vh;
+    width: 10vh;
+    background-color: rgba(0, 0, 0, 0.329);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0;
+    border: 1px solid white;
+}
+#moving-button i{
+    color: white;
+}
+.elem h4{
+    color: white;
+}
+.elem h4:nth-child(2){
+    font-weight: 300;
+
+}
+.page5{
+    height: 90vh;
+    width: 100%;
+    background-color: #9AC1CC;
+    overflow: hidden;
+}
+.page5 h1{
+    font-size: 37vw;
+}
+.page6{
+    height: 100vh;
+    width: 100%;
+    background-color: #151414;
+}
